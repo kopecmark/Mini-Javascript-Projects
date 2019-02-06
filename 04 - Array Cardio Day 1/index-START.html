@@ -89,6 +89,15 @@
     // Sum up the instances of each of these
     const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ];
 
+    const counts = data.reduce((count, item) => {
+      if (!count[item]) {
+        count[item] = 0;
+      }
+      count[item]++;
+      return count;
+    }, {});
+    console.log(counts);
+
   </script>
 </body>
 </html>
