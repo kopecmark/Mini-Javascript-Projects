@@ -39,12 +39,11 @@
       console.table(fifteen);
     // Array.prototype.map()
     // 2. Give us an array of the inventors' first and last names
-    let firstLast = [];
-    inventors.forEach(inventor=> {
-      firstLast.push(inventor.first);
-      firstLast.push(inventor.last);
+    
+    const firstLastNames = inventors.map(inventor => {
+      return `${inventor.first} ${inventor.last}`
     })
-    console.log(firstLast);
+    console.log(firstLastNames);
     
     // Array.prototype.sort()
     // 3. Sort the inventors by birthdate, oldest to youngest
