@@ -59,6 +59,12 @@
     })
     console.log(index);
 
+    // delete an item from the array
+    const newComments = [
+      ...comments.slice(0, index),
+      ...comments.slice(index + 1)
+    ];
+    console.log(newComments);
   </script>
 </body>
 </html>
