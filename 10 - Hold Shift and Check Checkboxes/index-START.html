@@ -106,7 +106,6 @@
       checkboxes.forEach(checkBox => {
         if (checkBox === this || checkBox === lastChecked) {
           inBetween = ! inBetween;
-          console.log('starting to check inbetween')
         }
 
         if(inBetween) {
@@ -115,8 +114,7 @@
       })
     }
     lastChecked = this;
-    console.log(e);
-    console.log(this)
+
   }
 
   checkboxes.forEach(checkbox => checkbox.addEventListener('click', handleCheck))
